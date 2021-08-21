@@ -75,10 +75,13 @@ nnoremap <right> :bn<cr>
 ## Super-Cool Plugins
 
 A fuzzy-finder to easily search for files, contents & buffers:
+
 [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
 
 Provides mappings to easily delete, change and add parentheses, brackets, quotes, and tags:
+
 [tpope/vim-surround](https://github.com/tpope/vim-surround)
 
 An integrated git experience in vim, that's "so awesome, it should be illegal":
+
 [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
