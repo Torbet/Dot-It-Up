@@ -41,6 +41,11 @@ set shiftwidth=4
 set tabstop=4
 ```
 
+Always try to show 10 lines above and below the cursor location:
+```vim
+set scrolloff=10
+```
+
 ## Avoiding RSI
 
 If you use command mode a lot, swapping the colon and semi-colon keys means 1 less keypress:
