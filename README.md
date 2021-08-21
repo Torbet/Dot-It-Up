@@ -60,6 +60,14 @@ Make yanking with capital Y behave like the other capital letters, and yank unti
 nnoremap Y y$
 ```
 
+Press space to go down 10 lines, control + space to go up 10 lines:
+```vim
+nnoremap <Space> 10j
+nnoremap <C-Space> 10k
+vnoremap <Space> 10j
+vnoremap <C-Space> 10k
+```
+
 ## File and Buffer Navigation, but better
 Press space twice to switch between your last two buffers, use it all the time for superfast switching:
 ```vim
