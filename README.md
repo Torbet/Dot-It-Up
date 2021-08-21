@@ -80,6 +80,22 @@ nnoremap <left> :bp<cr>
 nnoremap <right> :bn<cr>
 ```
 
+## Text searching
+
+Searching ignores case unless an upper case letter is present in the query:
+```vim
+set ignorecase smartcase
+```
+Begin searching while typing, hightlighting matches:
+```vim
+set incsearch hlsearch
+```
+
+Press your 'leader' key + enter to clear search highlighting:
+```vim
+nnoremap <silent> <leader><CR> :noh<CR>
+```
+
 ## Super-Cool Plugins
 
 A fuzzy-finder to easily search for files, contents & buffers:
