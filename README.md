@@ -67,10 +67,8 @@ nnoremap Y y$
 
 Press space to go down 10 lines, control + space to go up 10 lines:
 ```vim
-nnoremap <Space> 10j
-nnoremap <C-Space> 10k
-vnoremap <Space> 10j
-vnoremap <C-Space> 10k
+noremap <Space> 10j
+noremap <C-Space> 10k
 ```
 
 ## File and Buffer Navigation, but better
