@@ -1,11 +1,69 @@
-# Vim It Up 🔥
-### A collection of scripts, plugins, and clever hacks so that you can exit vim in STYLE! 🚀
+# Dot It Up 🔥
+### A collection of dotfile scripts, plugins, and clever hacks so that you can become the master of your own OS!
 
-(Not that you would want to, ever... MUAHAHAHA)
-
-![Vim It Up](vim.png)
+![Dot It Up](vim.png)
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](./CONTRIBUTING.md)
+
+# Table Of Contents
+
+<!-- toc -->
+
+- [Popular Dotfiles](#popular-dotfiles)
+- [Vim](#vim)
+  * [Sane-er Defaults](#sane-er-defaults)
+  * [KO Key-Strokes](#ko-key-strokes)
+  * [Handy-Dandy Commands](#handy-dandy-commands)
+  * [Remaps, Baby!](#remaps-baby)
+  * [Avoiding RSI](#avoiding-rsi)
+  * [Nicer Navigation](#nicer-navigation)
+  * [File and Buffer Navigation (but better)](#file-and-buffer-navigation-but-better)
+  * [Text searching](#text-searching)
+  * [Super-Cool Plugins](#super-cool-plugins)
+  * [ColorSchemes](#colorschemes)
+- [TMUX](#tmux)
+  * [Better Life, From the Start!](#better-life-from-the-start)
+  * [Plugins That Rock!](#plugins-that-rock)
+- [Shell (ZSH & Bash)](#shell-zsh--bash)
+  * [Oh-My-ZSH](#oh-my-zsh)
+  * [Gnarly Plugs, Man](#gnarly-plugs-man)
+
+<!-- tocstop -->
+
+# Popular Dotfiles
+
+* [holman](https://github.com/holman/dotfiles) - @holman does dotfiles
+* [LukeSmithxyz](https://github.com/LukeSmithxyz/voidrice) - My dotfiles (deployed by LARBS)
+* [mathiasbynens](https://github.com/mathiasbynens/dotfiles) - :wrench: .files, including ~/.macos — sensible hacker defaults for macOS
+* [lewagon](https://github.com/lewagon/dotfiles) - Default configuration for Le Wagon's students
+* [jessfraz](https://github.com/jessfraz/dotfiles) - My dotfiles. Buyer beware ;)
+* [cowboy](https://github.com/cowboy/dotfiles) - My Ubuntu / OS X dotfiles.
+* [amacgregor](https://github.com/amacgregor/dot-files) - Dotfiles repository
+* [alrra](https://github.com/alrra/dotfiles) - 💻 macOS / Ubuntu dotfiles
+* [CoreyMSchafer](https://github.com/CoreyMSchafer/dotfiles) - My dotfiles and personal preferences
+* [justone](https://github.com/justone/dotfiles) - Dotfiles
+* [webpro](https://github.com/webpro/awesome-dotfiles) - A curated list of dotfiles resources.
+* [thoughtbot](https://github.com/thoughtbot/dotfiles) - A set of vim, zsh, git, and tmux configuration files.
+* [driesvints](https://github.com/driesvints/dotfiles) - Get started with your own dotfiles.
+* [TheLocehiliosan](https://github.com/TheLocehiliosan/yadm) - Yet Another Dotfiles Manager
+* [skwp](https://github.com/skwp/dotfiles) - YADR - The best vim,git,zsh plugins and the cleanest vimrc you've ever seen
+* [anishathalye](https://github.com/anishathalye/dotbot) - A tool that bootstraps your dotfiles ⚡️
+* [theniceboy](https://github.com/theniceboy/.config) - My dotfiles
+* [paulirish](https://github.com/paulirish/dotfiles) - paul's shell, git, etc config files. also homebrew, migration setup. good stuff.
+* [webpro](https://github.com/webpro/dotfiles) - Dotfiles for macOS
+* [awesome-streamers](https://github.com/awesome-streamers/awesome-streamerrc) - Dotfiles for various streamers on Twitch.
+* [dotphiles](https://github.com/dotphiles/dotphiles) - A community driven framework of dotfiles.
+* [fatih](https://github.com/fatih/dotfiles) - My personal dotfiles
+* [jessfraz](https://github.com/jessfraz/.vim) - My .vim dotfiles and configurations.
+* [freekmurze](https://github.com/freekmurze/dotfiles) - My personal dotfiles
+* [joedicastro](https://github.com/joedicastro/dotfiles) - My .dotfiles
+* [michaeljsmalley](https://github.com/michaeljsmalley/dotfiles) - My dotfiles
+* [freshshell](https://github.com/freshshell/fresh) - Keep your dotfiles fresh.
+* [jaagr](https://github.com/jaagr/dots) - dotfiles for my local setup
+* [spencerwooo](https://github.com/spencerwooo/dotfiles) - Dotfiles for all :D
+* [twpayne](https://github.com/twpayne/chezmoi) - Manage your dotfiles across multiple diverse machines, securely.
+
+# Vim
 
 Some of the settings here may reference a 'leader' key, use:
 ```vim
@@ -189,3 +247,111 @@ Provides mappings to easily delete, change and add parentheses, brackets, quotes
 An integrated git experience in vim, that's "so awesome, it should be illegal":
 
 [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
+
+## ColorSchemes
+
+* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) - precision colorscheme for the vim text editor
+* [vim](https://github.com/challenger-deep-theme/vim) - FlatColor vim colorscheme
+* [vim-one](https://github.com/rakr/vim-one) - Adaptation of one-light and one-dark colorschemes for Vim
+* [jellybeans.vim](https://github.com/nanotech/jellybeans.vim) - A colorful, dark color scheme for Vim.
+* [vim-github-colorscheme](https://github.com/endel/vim-github-colorscheme) - A vim colorscheme based on Github's syntax highlighting.
+* [onedark.vim](https://github.com/joshdick/onedark.vim) - A dark Vim/Neovim color scheme inspired by Atom's One Dark syntax theme.
+* [Apprentice](https://github.com/romainl/Apprentice) - A dark, low-contrast, Vim colorscheme.
+* [srcery-vim](https://github.com/srcery-colors/srcery-vim) - Dark colorscheme for gvim and vim
+* [vim-janah](https://github.com/mhinz/vim-janah) - Vim colorscheme.
+* [tender.vim](https://github.com/jacoborus/tender.vim) - A 24bit colorscheme for Vim, Airline and Lightline
+* [Alduin](https://github.com/AlessandroYorba/Alduin) - A Vim Colorscheme
+* [vim-solarized8](https://github.com/lifepillar/vim-solarized8) - Optimized Solarized colorschemes. Best served with true-color terminals!
+* [vim-colorscheme-primary](https://github.com/google/vim-colorscheme-primary) - Primary, a Vim color scheme based on Google's colors
+* [vim-vividchalk](https://github.com/tpope/vim-vividchalk) - vividchalk.vim: a colorscheme strangely reminiscent of Vibrant Ink for a certain OS X editor
+* [nvcode-color-schemes.vim](https://github.com/ChristianChiarulli/nvcode-color-schemes.vim) - A bunch of generated colorschemes (treesitter supported)
+* [vim-afterglow](https://github.com/danilo-augusto/vim-afterglow) - Vim adaptation of the Afterglow colorscheme
+* [desert.vim](https://github.com/fugalh/desert.vim) - desert colorscheme
+* [wal.vim](https://github.com/dylanaraps/wal.vim) - 🎨 A vim colorscheme for use with wal
+* [Sierra](https://github.com/AlessandroYorba/Sierra) - A Vim Colorscheme
+* [vim-gruvbox8](https://github.com/lifepillar/vim-gruvbox8) - A simplified and optimized Gruvbox colorscheme for Vim
+* [space-vim-dark](https://github.com/liuchengxu/space-vim-dark) - :purple_heart: A dark colorscheme for space-vim, see space-vim-theme for light background support!
+* [vim-kalisi](https://github.com/freeo/vim-kalisi) - The colorscheme with neovim in mind
+* [candid.vim](https://github.com/flrnd/candid.vim) - A dark colorscheme with vibrant colors
+* [anderson.vim](https://github.com/tlhr/anderson.vim) - Dark vim colorscheme based on colors from Wes Anderson films
+* [kuroi.vim](https://github.com/aonemd/kuroi.vim) - A very dark colorscheme for Vim
+* [landscape.vim](https://github.com/itchyny/landscape.vim) - A colorscheme for Vim
+* [nord-vim](https://github.com/arcticicestudio/nord-vim) - An arctic, north-bluish clean and elegant Vim theme.
+* [vim-monotone](https://github.com/Lokaltog/vim-monotone) - A dark, monochrome colorscheme for vim
+
+
+# TMUX
+
+Most of the settings here require a prefix key, use this to set it, or keep it as ctrl+b, it's your life ;)
+```tmux
+unbind C-b
+set -g prefix {Your Key Of Choice}
+```
+
+## Better Life, From the Start!
+
+Tmux Windows start from 1, so no big reaches ;)
+```tmux
+set -g base-index 1
+```
+
+Makes keys register instantly, you may notice escape delays in vim without this:
+```tmux
+set -s escape-time 0
+```
+
+Prefix+c will open a new tmux session in your current directory:
+```tmux
+bind c new-window -c "#{pane_current_path}"
+```
+
+Renumber windows sequentially after closing any of them:
+```tmux
+set -g renumber-windows on
+```
+
+Enable mouse, it's sometimes nice for scrolling:
+```tmux
+set -g mode-mouse on
+```
+
+Increase scroll-back history, so you can see more:
+```tmux
+set -g history-limit 10000
+```
+
+## Plugins That Rock!
+
+Installing TPM (Tmux plugin manager):
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+A set of tmux options that should be acceptable to everyone.
+[tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+
+# Shell (ZSH & Bash)
+
+## Oh-My-ZSH
+
+Gives you more customization over your shell
+
+Install:
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+Add to zshrc:
+```bash
+ZSH=~/.oh-my-zsh
+```
+
+## Gnarly Plugs, Man
+
+Auto-complete shell commands, it's cool:
+
+[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+Highlight your current command, lets you know what's going on:
+
+[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
