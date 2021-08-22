@@ -41,9 +41,63 @@ set shiftwidth=4
 set tabstop=4
 ```
 
+Convert tabs to spaces:
+```vim
+set expandtab
+```
+
 Always try to show 10 lines above and below the cursor location:
 ```vim
 set scrolloff=10
+```
+
+Allows you to switch between buffers without saving EVERY TIME:
+```vim
+set hidden
+```
+
+Change to the correct indention and plugins dependent on the file type
+```vim
+filetype on
+filetype indent on
+filetype plugin on
+```
+
+## KO Key-Strokes
+
+Visually select the entire file:
+```vim
+ggVG
+```
+
+Search for the word under the cursor:
+```vim
+*
+```
+
+## Handy-Dandy Commands
+
+Reads and inserts the contents of a file at the current line:
+```vim
+:r {your file name}
+```
+
+Reads and inserts the output of a shell command at the current line:
+```vim
+:r! {your shell command, eg: ls}
+```
+
+Find and replace "foo" with "bar" through whole file!
+```vim
+:%s/foo/bar/g 
+```
+
+## Remaps, Baby!
+
+Move visual selection up and down a line:
+```vim
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 ```
 
 ## Avoiding RSI
@@ -53,7 +107,19 @@ If you use command mode a lot, swapping the colon and semi-colon keys means 1 le
 nnoremap ; :
 nnoremap : ;
 ```
+
+Write to and exit the file, behaves like :wq:
+```vim
+ZZ
+```
+
+Run the current line as a command:
+```vim
+:<Ctrl-r> <Ctrl-l>
+```
+
 ## Nicer Navigation
+
 Allows the cursor to move up and down naturally by display, lines instead of file lines:
 ```vim
 nnoremap j gj
@@ -71,7 +137,8 @@ noremap <Space> 10j
 noremap <C-Space> 10k
 ```
 
-## File and Buffer Navigation, but better
+## File and Buffer Navigation (but better)
+
 Press space twice to switch between your last two buffers, use it all the time for superfast switching:
 ```vim
 nnoremap <leader><leader> <c-^>
@@ -84,6 +151,11 @@ nnoremap <right> :bn<cr>
 ```
 
 ## Text searching
+
+Search for foo throughout file (press n for next, N for previous):
+```vim
+/foo
+```
 
 Searching ignores case unless an upper case letter is present in the query:
 ```vim
