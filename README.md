@@ -162,7 +162,7 @@ Searching ignores case unless an upper case letter is present in the query:
 set ignorecase smartcase
 ```
 
-Begin searching while typing, hightlighting matches:
+Begin searching while typing, highlighting matches:
 ```vim
 set incsearch hlsearch
 ```
