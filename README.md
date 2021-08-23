@@ -315,6 +315,10 @@ An integrated git experience in vim, that's "so awesome, it should be illegal":
 
 [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 
+Vim like navigation of file system using buffers.
+
+[justinmk/vim-dirvish](https://github.com/justinmk/vim-dirvish)
+
 ## ColorSchemes
 
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) - precision colorscheme for the vim text editor
