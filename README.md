@@ -221,6 +221,13 @@ Quickly re-select either the last pasted or changed text:
 noremap gV `[v`]
 ```
 
+Run the recorded macro on a range of lines:
+
+```vim
+" Credit goes to https://github.com/stoeffel/.dotfiles/blob/master/vim/visual-at.vim
+xnoremap <silen> @ :<C-u>echo "@".getcmdline() | execute ":\'<,\'>normal @" . nr2char(getchar())<CR>
+```
+
 ## Avoiding RSI
 
 If you use command mode a lot, swapping the colon and semi-colon keys means 1 less keypress:
