@@ -114,23 +114,82 @@ Allows you to switch between buffers without saving EVERY TIME:
 set hidden
 ```
 
+Case insensitive in `command-line` mode:
+```vim
+set wildignorecase
+```
+
 Change to the correct indention and plugins dependent on the file type
 ```vim
 filetype on
 filetype indent on
 filetype plugin on
+" or one line alternative
+filetype plugin indent on
 ```
 
 ## KO Key-Strokes
+
+### Normal mode
 
 Visually select the entire file:
 ```vim
 ggVG
 ```
 
-Search for the word under the cursor:
+Search for the word under the cursor (forward):
 ```vim
 *
+```
+
+Search for the word under the cursor (backward):
+```vim
+#
+```
+
+Re-run the last `command-line` command:
+```vim
+@:
+```
+
+### Insert mode
+
+Alternative to `Esc`:
+```vim
+<C-[>
+```
+
+Paste the content of register and fix the indent:
+```vim
+<C-r><C-p><vim-register>
+" for example: <C-r><C-p>+ (paste clipboard content into vim)
+```
+
+Delete until the beginning of recently added word:
+```vim
+<C-w>
+```
+
+Delete until the beginning of where entering insert mode:
+```vim
+<C-u>
+```
+
+### Visual mode
+
+Add/minus number for each matching line:
+```vim
+g<C-a> " add one number
+g<C-x> " minus one number
+" for example:
+" select the number below using Visual block command:
+" 0
+" 0
+" 0
+" if we use g<C-a>, then those three line will become:
+" 1
+" 2
+" 3
 ```
 
 ## Handy-Dandy Commands
@@ -147,7 +206,7 @@ Reads and inserts the output of a shell command at the current line:
 
 Find and replace "foo" with "bar" through whole file!
 ```vim
-:%s/foo/bar/g 
+:%s/foo/bar/g
 ```
 
 ## Remaps, Baby!
@@ -170,9 +229,14 @@ nnoremap ; :
 nnoremap : ;
 ```
 
-Write to and exit the file, behaves like :wq:
+Write to and exit the file, behaves like `:wq`:
 ```vim
 ZZ
+```
+
+Exit without saving, behaves like `:q!`:
+```vim
+ZQ
 ```
 
 Run the current line as a command:
@@ -197,6 +261,9 @@ Press space to go down 10 lines, control + space to go up 10 lines:
 ```vim
 noremap <Space> 10j
 noremap <C-Space> 10k
+" if there's an issue with ctrl-space, you can use <C-@> or <Nul>
+" Ref: https://stackoverflow.com/a/24983736
+noremap <C-@> 10k
 ```
 
 ## File and Buffer Navigation (but better)
