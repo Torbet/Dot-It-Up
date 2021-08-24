@@ -229,6 +229,14 @@ Run the recorded macro on a range of lines:
 xnoremap <silen> @ :<C-u>echo "@".getcmdline() | execute ":\'<,\'>normal @" . nr2char(getchar())<CR>
 ```
 
+Format a paragraph or visual selection to 80 character lines:
+
+```vim
+" Taken from: https://github.com/nickjj/dotfiles/blob/599f90a959f58c4ba3b771c9d933f2eeb83eef94/.vimrc#L305
+nnoremap <Leader>g gqap
+xnoremap <Leader>g gqa
+```
+
 ## Avoiding RSI
 
 If you use command mode a lot, swapping the colon and semi-colon keys means 1 less keypress:
