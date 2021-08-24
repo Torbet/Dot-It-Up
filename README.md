@@ -62,6 +62,7 @@
 * [jaagr](https://github.com/jaagr/dots) - dotfiles for my local setup
 * [spencerwooo](https://github.com/spencerwooo/dotfiles) - Dotfiles for all :D
 * [twpayne](https://github.com/twpayne/chezmoi) - Manage your dotfiles across multiple diverse machines, securely.
+* [nickjj](https://github.com/nickjj/dotfiles) - Personal dotfiles (Vim, tmux, zsh, etc.)
 
 # Vim
 
