@@ -19,6 +19,7 @@
   * [Nicer Navigation](#nicer-navigation)
   * [File and Buffer Navigation (but better)](#file-and-buffer-navigation-but-better)
   * [Text searching](#text-searching)
+  * [Get Specific Help](#get-specific-help)
   * [Super-Cool Plugins](#super-cool-plugins)
   * [ColorSchemes](#colorschemes)
 - [TMUX](#tmux)
@@ -316,6 +317,20 @@ Press your 'leader' key + enter to clear search highlighting:
 ```vim
 nnoremap <silent> <leader><CR> :noh<CR>
 ```
+
+## Get Specific Help
+
+Description          | Prepend   | Example           |
+-------------------- | --------- | ----------------- |
+Normal mode command  | (nothing) | :help x           |
+Visual mode command  | v_        | :help v_u         |
+Insert mode command  | i_        | :help i_META      |
+Command-line command | :         | :help :quit       |
+Option               | '         | :help 'textwidth' |
+Command-line editing | c         | :help c_\<BS>     |
+Vim command argument | -         | :help -r          |
+Search flags         | /         | :help /\U         |
+Substitution flags   | s/        | :help s/\\&       |
 
 ## Super-Cool Plugins
 
